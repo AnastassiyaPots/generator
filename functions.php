@@ -4,7 +4,7 @@ require 'config.php';
 
 function chatgpt($prompt) {
     global $api_key;
-    $url = 'https://api.openai.com/v1/completions';
+    $url = 'https://api.pawan.krd/v1/completions';
 
     $ch = curl_init();
 
