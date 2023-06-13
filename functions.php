@@ -43,7 +43,7 @@ function chatgpt($prompt) {
 
 function generateImage($prompt) {
     global $api_key;
-    $url = 'https://api.example.com/v1/generate-image'; // Замените на URL API для генерации изображений
+    $url = 'https://api.pawan.krd/v1/images/generations'; // Замените на URL API для генерации изображений
 
     $ch = curl_init();
 
