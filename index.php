@@ -22,12 +22,11 @@ if(isset($_POST['words'])){
 };
 
 if (isset($_POST['style'])) {
-    $prompt = 'Напиши текст по теме '. $_POST['style'];
+    $prompt = 'Напиши текст по теме стиля интерьера '. $_POST['style'];
 
     if (isset($_POST['words']) && $_POST['words']) {
         $prompt .= ', используя ключевые слова "' .$_POST['words']. '"';
     }
-
 
     $answer = chatgpt($prompt);
 
