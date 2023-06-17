@@ -30,7 +30,7 @@ if (isset($_POST['style'])) {
 
     $answer = chatgpt($prompt);
 
-    $imageprompt = 'Переведи на английский язык "' . $answer . '"';
+    $imageprompt = 'Переведи на английский язык "' . $answer . '" и сгенирировать изображение';
     $image = generateImage($imageprompt);
 }
 
